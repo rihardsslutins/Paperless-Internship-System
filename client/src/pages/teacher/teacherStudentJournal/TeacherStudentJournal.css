@@ -1,0 +1,38 @@
+.teacher-student-journal-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 40px;
+}
+.teacher-student-journal-header button {
+    width: fit-content;
+}
+.teacher-student-journal-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    grid-column-start: 2;
+    gap: 5px;
+}
+.teacher-student-journal-header h1,
+.teacher-student-journal-info {
+    text-align: center;
+}
+@media only screen and (max-width: 800px) {
+    .teacher-student-journal-header {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .teacher-student-journal-info,
+    .teacher-student-journal-header h1 {
+        grid-column: 1 / span 2;
+    }
+}
+
+/* Table */
+.teacher-student-journal .table td:nth-child(3), 
+.teacher-student-journal .table th:nth-child(3) {
+    width: 100%;
+}
+.teacher-student-journal .table td:not(:nth-child(3)){
+    text-align: center;
+}

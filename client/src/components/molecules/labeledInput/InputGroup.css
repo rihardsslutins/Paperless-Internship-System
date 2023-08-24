@@ -1,0 +1,28 @@
+.input-group, 
+.input-group-wide,
+.textarea-group {
+    margin-bottom: 20px;
+}
+
+.radio-input {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.input-button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.input-button-group .input-field {
+    min-width: auto;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    font-size: 16px;
+}
+.input-button-group button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 14px;
+}

@@ -1,0 +1,79 @@
+.invite-container h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: var(--white);
+}
+.invite-notifications {
+    box-sizing: border-box;
+    height: 200px;
+    background-color: var(--white);
+    border-width: 0 1px 1px 1px;
+    border-color: var(--white);
+    border-style: solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow-y: auto;
+    transition: all .3s;
+}
+.invite-notifications.dark {
+    background-color: var(--dark-primary-color);
+    border-color: var(--dark-primary-color);
+}
+
+/* Scrollbar for invite notifications */
+.invite-notifications::-webkit-scrollbar{
+    width: 10px;
+}
+.invite-notifications::-webkit-scrollbar-track{
+    background: var(--secondary-text);
+    border-radius: 3px;
+}
+.invite-notifications::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 3px;
+}
+.invite-notifications::-webkit-scrollbar-thumb:hover {
+    background: var(--button-hover);
+}
+
+.home-invite:last-child {
+    border-bottom: none;
+}
+.home-invite {
+    width: 100%;
+    border-bottom: 1px solid var(--secondary-text);
+    cursor: pointer;
+    transition: all .3s;
+}
+.home-invite:hover {
+    background-color: var(--page-background);
+}
+.home-invite.dark:hover {
+    background-color: var(--page-dark-background);
+}
+.home-invite p {
+    line-height: 49px;
+    padding: 0 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    user-select: none;
+}
+.home-no-invites-container,
+.invite-loading-container {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-text);
+}
+.home-no-invites,
+.invite-loading-container .loading {
+    align-self: center;
+    text-align: center;
+}

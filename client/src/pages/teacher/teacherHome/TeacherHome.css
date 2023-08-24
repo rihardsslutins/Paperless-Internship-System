@@ -1,0 +1,12 @@
+.teacher-home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 30px;
+    gap: 50px;
+}
+@media only screen and (max-width: 1000px) {
+    .teacher-home-grid {
+        display: flex;
+        flex-direction: column;
+    }
+}

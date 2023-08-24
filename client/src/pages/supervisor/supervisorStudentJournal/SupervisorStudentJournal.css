@@ -1,0 +1,52 @@
+.supervisor-student-journal-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 40px;
+}
+.supervisor-student-journal-header button {
+    width: fit-content;
+}
+.supervisor-student-journal-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    grid-column-start: 2;
+    gap: 5px;
+}
+.supervisor-student-journal-header h1,
+.supervisor-student-journal-info {
+    text-align: center;
+}
+@media only screen and (max-width: 800px) {
+    .supervisor-student-journal-header {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .supervisor-student-journal-info,
+    .supervisor-student-journal-header h1 {
+        grid-column: 1 / span 2;
+    }
+}
+
+/* Table */
+.supervisor-student-journal table tbody tr td {
+    cursor: pointer;
+}
+
+/* Form */
+.supervisor-journal-form {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.supervisor-journal-form-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.supervisor-journal-form-buttons button {
+    width: 100%;
+}
+.supervisor-student-journal .alert-box {
+    margin-bottom: 20px;
+}

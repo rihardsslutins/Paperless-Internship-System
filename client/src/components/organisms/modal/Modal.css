@@ -1,0 +1,102 @@
+/* All modals */
+.modal,
+.journal-modal,
+.delete-profile-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    position: fixed;
+    max-height: 100%;
+    overflow-y: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    width: 60%;
+    padding: 2% 3%;
+    border-radius: 5px;
+}
+.modal-content.dark {
+    background-color: var(--dark-primary-color);
+}
+.modal-header {
+    display: flex;
+    align-items: center;
+}
+.modal-header img {
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    transition: all .5s;
+    border-radius: 5px;
+}
+.modal-header img:hover {
+    background-color: var(--secondary-color);
+}
+.modal-content.dark img {
+    filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(294deg) brightness(109%) contrast(101%);
+}
+.modal-content.dark img:hover {
+    background-color: #b6b6b6;
+}
+.modal-header h2 {
+    text-align: center;
+}
+.modal-body {
+    padding: 25px 0;
+}
+@media only screen and (max-width: 800px) {
+    .modal-content {
+        width: 80%;
+        padding: 4% 6%;
+    }
+}
+
+/* Journal modal and Delete profile modal */
+.journal-modal .modal-body h3,
+.delete-profile-modal .modal-body h3{
+    color: var(--danger);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.journal-modal .input-group,
+.delete-profile-modal .input-group{
+    max-width: fit-content;
+    margin: 20px auto 0 auto;
+}
+.journal-modal .input-field,
+.delete-profile-modal .input-field {
+    border-color: var(--secondary-color);
+}
+.journal-modal .modal-footer,
+.delete-profile-modal .modal-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+.journal-modal .modal-footer button,
+.delete-profile-modal .modal-footer button{
+    display: block;
+    width: 100%;
+}
+.journal-modal-inputs {
+    display: flex;
+    gap: 50px;
+}
+@media only screen and (max-width: 600px) {
+    .journal-modal-inputs {
+        flex-direction: column;
+    }
+    .journal-modal .modal-footer {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .journal-modal .input-label {
+        font-size: 18px;
+    }
+}

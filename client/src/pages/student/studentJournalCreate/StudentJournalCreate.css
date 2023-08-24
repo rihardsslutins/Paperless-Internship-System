@@ -1,0 +1,17 @@
+.student-create-journal-header {
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    margin-bottom: 60px;
+}
+.student-create-journal-header h1{
+    text-align: center;
+}
+.student-create-journal-header button {
+    width: fit-content;
+}
+@media only screen and (max-width: 800px) {
+    .student-create-journal-header {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+}

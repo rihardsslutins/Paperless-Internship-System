@@ -1,0 +1,60 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.App {
+  min-height: 100vh;
+}
+.App.light {
+  background-color: var(--page-background);
+  color: var(--primary-text);
+}
+.App.dark {
+  background-color: var(--page-dark-background);
+  color: var(--white);
+}
+.container {
+  padding: 140px 15% 60px 15%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.dashboard-container {
+  margin-left: 80px;
+  padding: 60px 5%;
+  transition: all .3s linear;
+}
+.sidebar.expanded ~ .dashboard-container {
+  margin-left: 220px;
+}
+@media only screen and (max-width: 1000px), (max-height: 700px) {
+  .dashboard-container {
+    padding: 100px 5%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .sidebar.expanded ~ .dashboard-container {
+    margin-left: auto;
+  }
+}
+
+/* Loading */
+.loading {
+  margin: auto;
+  height: 48px;
+  width: 48px;
+  color: var(--secondary-color);
+  border: 5px solid;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0); 
+  }
+  100% {
+    transform: rotate(360deg); 
+  } 
+}

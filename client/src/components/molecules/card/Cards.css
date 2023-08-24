@@ -1,0 +1,37 @@
+/* Journal Card */
+.journal-card {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 5px;
+    transition: all .3s;
+}
+.journal-card:hover {
+    box-shadow: rgba(150, 150, 150, 0.4) -5px 5px, rgba(150, 150, 150, 0.3) -10px 10px, rgba(150, 150, 150, 0.2) -15px 15px, rgba(150, 150, 150, 0.1) -20px 20px, rgba(150, 150, 150, 0.05) -25px 25px;
+}
+.journal-card.dark {
+    background-color: var(--dark-primary-color);
+}
+.journal-card.dark:hover {
+    box-shadow: rgba(63, 63, 63, 0.4) -5px 5px, rgba(63, 63, 63, 0.3) -10px 10px, rgba(63, 63, 63, 0.2) -15px 15px, rgba(63, 63, 63, 0.1) -20px 20px, rgba(63, 63, 63, 0.05) -25px 25px;
+}
+.journal-card-company {
+    font-size: 20px;
+}
+.journal-card-mentor,
+.journal-card-teacher {
+    color: var(--secondary-text);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.journal-card-date {
+    color: var(--secondary-text);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.journal-card button {
+    width: 100%;
+}
+.journal-pending {
+    text-align: center;
+    font-size: 18px;
+}

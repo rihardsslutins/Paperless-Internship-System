@@ -1,0 +1,110 @@
+/* Input */
+.input-field,
+.input-textarea,
+.select-input {
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 6px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 3px solid var(--white);
+    outline: none;
+    color: var(--primary-text);
+    transition: all .5s;
+}
+.input-field.dark,
+.input-textarea.dark,
+.select-input.dark {
+    background-color: var(--dark-secondary-color);
+    border: 3px solid var(--dark-secondary-color);
+    color: var(--white);
+}
+.input-field:focus,
+.input-textarea:focus {
+    border: 3px solid var(--primary-color) !important;
+}
+.input-field:hover,
+.input-textarea:hover,
+.select-input:hover {
+    border: 3px solid var(--secondary-color);
+}
+
+
+/* Radio Input */
+.radio-input-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+    font-size: 18px;
+    padding: 6px 10px;
+    cursor: pointer;
+    width: 100%;
+    background-color: var(--white);
+    border: 3px solid var(--white);
+    border-radius: 5px;
+}
+.radio-input-item.dark {
+    background-color: var(--dark-secondary-color);
+    border: 3px solid var(--dark-secondary-color);
+}
+.radio-input-field {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.radio-checkmark {
+    display: inline-block;
+    vertical-align: middle;
+    height: 13px;
+    width: 13px;
+    border: 3px solid var(--secondary-color);
+    border-radius: 50%;
+}
+.radio-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.radio-input-field:checked ~ .radio-checkmark:after {
+    display: block;
+}
+.radio-input-item .radio-checkmark:after {
+    top: 13px;
+    left: 16px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+}
+
+/* Search Input */
+.search-input {
+    display: flex;
+}
+.search-input img {
+    background-color: var(--secondary-color);
+    border-radius: 5px 0 0 5px;
+}
+.search-input .input-field {
+    border-radius: 0 5px 5px 0;
+    min-width: fit-content;
+    border-left: 0 none;
+}
+.search-input .input-field:focus {
+    border: 3px solid var(--secondary-color) !important;
+    border-left: 0 none !important;
+}
+
+/* Select Input */
+.select-input {
+    cursor: pointer;
+    appearance: none;
+    background-image: url(../../../assets/arrowDown.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.select-input:focus{
+    border: 3px solid var(--secondary-color) !important;
+}

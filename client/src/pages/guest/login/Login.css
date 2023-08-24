@@ -1,0 +1,9 @@
+.login-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.login .alert-box {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}

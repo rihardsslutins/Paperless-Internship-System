@@ -1,0 +1,97 @@
+.home-student-title {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    height: 40px;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: var(--white);
+}
+.home-student-title button {
+    width: fit-content;
+    margin-left: auto;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+.home-student-title.light button {
+    color: var(--white);
+    border: 3px solid var(--secondary-color);
+}
+.home-students-list {
+    box-sizing: border-box;
+    height: 200px;
+    background-color: var(--white);
+    border-width: 0 1px 1px 1px;
+    border-color: var(--white);
+    border-style: solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow-x: auto;
+    transition: all .3s;
+}
+.home-students-list.dark {
+    background-color: var(--dark-primary-color);
+    border-color: var(--dark-primary-color);
+}
+
+
+.home-students-list::-webkit-scrollbar{
+    width: 10px;
+}
+.home-students-list::-webkit-scrollbar-track{
+    background: var(--secondary-text);
+    border-radius: 3px;
+}
+.home-students-list::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 3px;
+}
+.home-students-list::-webkit-scrollbar-thumb:hover {
+    background: var(--button-hover);
+}
+
+
+.home-students-list table {
+    margin: 0;
+}
+.home-student td{
+    line-height: 49px;
+    white-space: nowrap;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: var(--secondary-text);
+    cursor: pointer;
+    padding: 0 20px;
+    user-select: none;
+}
+.home-student:last-child td {
+    border-width: 0;
+}
+.home-student:hover {
+    background-color: var(--page-background);
+    color: var(--primary-color);
+}
+.home-students-list.dark .home-student:hover {
+    background-color: var(--page-dark-background);
+    color: var(--white);
+}
+@media only screen and (max-width: 1100px) {
+    .home-student-title {
+        display: flex;
+    }
+}
+
+.home-no-students-container,
+.student-loading-container {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-text);
+}
+.home-no-students,
+.student-loading-container .loading {
+    align-self: center;
+    text-align: center;
+}

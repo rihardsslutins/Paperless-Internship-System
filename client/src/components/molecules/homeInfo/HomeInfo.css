@@ -1,0 +1,41 @@
+.home-info {
+    font-size: 18px;
+    display: grid;
+    grid-template-areas: "namedays clock date";
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 20px 5%;
+}
+.home-info div {
+    grid-area: namedays;
+    text-align: left;
+}
+.home-info h2 {
+    grid-area: clock;
+    text-align: center;
+}
+.home-info p {
+    grid-area: date;
+    text-align: right;
+}
+
+@media only screen and (max-width: 1000px) {
+    .home-info {
+        grid-template-areas: "namedays date"
+                             "clock clock";
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .home-info {
+        grid-template-areas: "clock"
+                             "date"
+                             "namedays";
+        grid-template-columns: 1fr;
+    }
+    .home-info div,
+    .home-info p {
+        text-align: center;
+    }
+}

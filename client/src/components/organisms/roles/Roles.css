@@ -1,0 +1,16 @@
+.roles p{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.roles-grid {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+@media only screen and (max-width: 800px) {
+    .roles-grid {
+        grid-template-columns: 1fr;
+    }
+}

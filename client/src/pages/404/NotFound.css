@@ -1,0 +1,40 @@
+.not-found {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    padding: 0 15%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.not-found-info h1 {
+    margin-bottom: 20px;
+}
+.not-found-info button {
+    margin-top: 40px;
+    font-size: 18px;
+}
+.not-found img {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+@media only screen and (max-width: 1400px) {
+    .not-found {
+        padding: 0 10%;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .not-found {
+        padding: 0 5%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .not-found {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

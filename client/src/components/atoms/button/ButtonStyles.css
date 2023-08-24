@@ -1,0 +1,109 @@
+/* Colors */
+@import "../../colors/Colors.css";
+
+
+/* Nav button */
+.nav-button, .nav-button-active {
+    color: var(--white);
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.nav-button {
+    border: 3px solid var(--secondary-color);
+    cursor: pointer;
+    background-color: transparent;
+    background: linear-gradient(to left, transparent 50%, var(--secondary-color) 50%);
+    background-size: 200% 200%;
+    background-position: right;
+    transition: all .5s ease;
+}
+.nav-button:hover {
+    background-position: left;
+}
+.nav-button-active {
+    background-color: var(--button-hover);
+    border: 3px solid var(--button-hover);
+}
+
+
+/* Page button */
+.page-button {
+    color: var(--white);
+    background-color: var(--primary-color);
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 3px solid var(--primary-color);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all .5s;
+    white-space: nowrap;
+}
+.page-button:hover {
+    background-color: var(--button-hover);
+}
+
+/* Page button 2 */
+.page-button-2, .page-button-2-active {
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 3px solid var(--primary-color);
+}
+.page-button-2 {
+    color: var(--primary-text);
+    cursor: pointer;
+    background: linear-gradient(to top, transparent 50%, var(--secondary-color) 50%);
+    background-size: 200% 200%;
+    background-position: bottom;
+    transition: all .3s ease;
+}
+.page-button-2.dark {
+    color: var(--white);
+    border: 3px solid var(--secondary-color);
+}
+.page-button-2:hover {
+    background-position: top;
+    color: var(--white);
+}
+.page-button-2-active {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* Danger button */
+.danger-button {
+    color: var(--white);
+    background-color: var(--danger);
+    width: fit-content;
+    opacity: 1;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all .5s;
+    white-space: nowrap;
+}
+.danger-button:hover {
+    opacity: .8;
+}
+
+/* Danger button 2 */
+.danger-button-2 {
+    color: var(--danger);
+    background-color: transparent;
+    width: fit-content;
+    opacity: 1;
+    border: 3px solid var(--danger);
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all .5s;
+    white-space: nowrap;
+}
+.danger-button-2:hover {
+    background-color: var(--danger-bg);
+}

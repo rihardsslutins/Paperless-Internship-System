@@ -1,0 +1,32 @@
+.sidebar-item,
+.sidebar-item-active {
+    display: flex;
+    padding: 5px 10px;
+    gap: 20px;
+    align-items: center;
+    justify-content: left;
+    color: var(--white);
+    text-decoration: none;
+    transition: all .5s;
+    cursor: default;
+}
+.sidebar.expanded .sidebar-item, 
+.sidebar img {
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+.sidebar.expanded .sidebar-item:hover,
+.sidebar-item img:hover,
+.sidebar.expanded .sidebar-item-active,
+.sidebar-item-active img {
+    border-radius: 5px;
+}
+.sidebar.expanded .sidebar-item:hover,
+.sidebar-item img:hover {
+    background-color: var(--secondary-color);
+}
+.sidebar.expanded .sidebar-item-active,
+.sidebar-item-active img {
+    background-color: var(--button-hover);
+    cursor: default;
+}

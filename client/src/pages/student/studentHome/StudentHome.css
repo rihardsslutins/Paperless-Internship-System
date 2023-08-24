@@ -1,0 +1,18 @@
+.home-student-journal-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.home-student-journal {
+    width: 440px;
+}
+.home-student-journal h2 {
+    margin-bottom: 10px;
+}
+.student-home-no-journal button {
+    margin-top: 10px;
+}
+.student-home-no-journal h3 {
+    margin-top: 30px;
+}

@@ -1,0 +1,65 @@
+/* Responsive table, custom srollbar */
+.table-container {
+    overflow-x: auto;
+    margin-bottom: 30px;
+}
+.table-container::-webkit-scrollbar{
+    width: 10px;
+}
+.table-container::-webkit-scrollbar-track{
+    background: var(--secondary-text);
+    border-radius: 5px;
+}
+.table-container::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+.table-container::-webkit-scrollbar-thumb:hover {
+    background: var(--button-hover);
+}
+
+/* Table */
+table {
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    width: 100%;
+}
+table td, 
+table th {
+    border: 2px solid var(--primary-color);
+    padding: 10px 8px;
+    cursor: default;
+    text-align: center;
+}
+table tbody tr {
+    transition: all .4s;
+}
+table tbody tr:hover {
+    background-color: var(--button-hover);
+    color: var(--white);
+}
+table th {
+    background-color: var(--primary-color);
+    font-size: 18px;
+    color: var(--white);
+    white-space: nowrap;
+}
+@media only screen and (max-width: 800px) {
+    table th {
+        font-size: 16px;
+    }
+}
+
+/* Journal Table */
+table .date {
+    white-space: nowrap;
+}
+table .task-description {
+    width: 100%;
+    text-align: left;
+}
+
+/* Students table */
+table.students-table tr td{
+    cursor: pointer;
+}

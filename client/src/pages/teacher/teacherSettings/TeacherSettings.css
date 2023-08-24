@@ -1,0 +1,69 @@
+.teacher-settings {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.teacher-info {
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.teacher-profile-image {
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    padding: 10px;
+    width: 80px;
+    margin: 0 auto 25px auto;
+}
+.teacher-info h1 {
+    margin-bottom: 30px;
+}
+.teacher-contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.teacher-info button {
+    margin: 20px auto 30px auto;
+}
+.teacher-theme {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+    font-size: 20px;
+    align-items: center;
+    gap: 10px;
+}
+.teacher-theme span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.teacher-theme span:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+.teacher-settings button {
+    margin-left: auto;
+    height: fit-content;
+}
+
+@media only screen and (max-width: 800px) {
+    .teacher-settings {
+        grid-template-columns: 1fr;
+    }
+    .teacher-info {
+        grid-column-start: 1;
+    }
+    .teacher-settings button {
+        margin: 60px auto 0 auto;
+    }
+    .teacher-info button {
+        margin: 10px auto 20px auto;
+    }
+}

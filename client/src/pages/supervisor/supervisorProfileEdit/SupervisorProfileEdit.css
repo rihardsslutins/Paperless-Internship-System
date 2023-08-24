@@ -1,0 +1,11 @@
+.supervisor-profile-edit {
+    display: flex;
+    flex-direction: column;
+}
+.change-password {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.supervisor-profile-edit .update-profile-form-grid div:nth-child(5){
+    grid-column: 1 / 3;
+}

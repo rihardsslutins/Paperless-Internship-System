@@ -1,0 +1,16 @@
+.registration {
+    max-width: 650px;
+}
+.registration h2{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.registration-form button {
+    min-width: 100%;
+}
+.registration .roles {
+    margin-bottom: 30px;
+}
+.registration .registration-form {
+    margin-top: 20px;
+}
